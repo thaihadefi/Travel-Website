@@ -1,0 +1,35 @@
+extends ../layouts/default.pug
+
+block title
+  title Thông tin website
+
+block main
+  
+  h1.box-title Thông tin website
+
+  //- Section 8
+  .section-8
+    form
+      .inner-group
+        label(for="websiteName" class="inner-label") Tên website
+        input(type="text" id="websiteName")
+      .inner-group
+        label(for="phone" class="inner-label") Số điện thoại
+        input(type="text" id="phone")
+      .inner-group
+        label(for="email" class="inner-label") Email
+        input(type="email" id="email")
+      .inner-group
+        label(for="address" class="inner-label") Địa chỉ
+        input(type="text" id="address")
+      .inner-group
+        label(for="logo" class="inner-label") Logo
+        input(type="file" id="logo")
+      .inner-group
+        label(for="favicon" class="inner-label") Favicon
+        input(type="file" id="favicon")
+      .inner-button.inner-two-col
+        button Cập nhật
+    .inner-back
+      a(href="#") Quay lại danh sách
+  //- End Section 8

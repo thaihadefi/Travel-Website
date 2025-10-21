@@ -1,0 +1,35 @@
+extends ../layouts/default.pug
+
+block title
+  title Thông tin cá nhân
+
+block main
+  
+  h1.box-title Thông tin cá nhân
+
+  //- Section 8
+  .section-8
+    form
+      .inner-group
+        label(for="fullName" class="inner-label") Họ tên
+        input(type="text" id="fullName")
+      .inner-group
+        label(for="email" class="inner-label") Email
+        input(type="email" id="email")
+      .inner-group
+        label(for="phone" class="inner-label") Số điện thoại
+        input(type="text" id="phone")
+      .inner-group
+        label(for="positionCompany" class="inner-label") Chức vụ
+        input(type="text" id="positionCompany" readonly)
+      .inner-group
+        label(for="role" class="inner-label") Nhóm quyền
+        input(type="text" id="role" readonly)
+      .inner-group.inner-two-col
+        label(for="avatar" class="inner-label") Ảnh đại diện
+        input(type="file" id="avatar")
+      .inner-button.inner-two-col
+        button Cập nhật
+    .inner-back
+      a(href="#") Đổi mật khẩu
+  //- End Section 8
